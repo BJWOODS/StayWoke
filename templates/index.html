@@ -1,36 +1,14 @@
-<html>
-<head>
-	<title>Stay Woke</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.19/css/uikit.min.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.19/js/uikit.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.19/js/uikit-icons.min.js"></script>
-</head>
-
-<body>
-	<!--navigation component-->
-	<div id="offcanvas-1" class="uk-offcanvas">
-		<div class="uk-offcanvas-bar">
-			<ul class="uk-nav uk-nav-offcanvas">...</ul>
-		</div>
+{% extends "base.html" %}
+{% block body %}
+	Stay Woke! they be creepin
+	<!--<a href="#" class="uk-icon">
+		<i class="fa fa-bars" aria-hidden="true"></i>
+	</a>-->
+	<div class="uk-grid uk-container">
+		<div class="uk-width-1-5">{{apiKey}}</div>
+		<div class="uk-width-1-5">celeb in chief<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/384px-Donald_Trump_official_portrait.jpg"> Trump</div>
+		<div class="uk-width-1-5">speaker <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Speaker_Paul_Ryan_official_photo_%28cropped_2%29.jpg/408px-Speaker_Paul_Ryan_official_photo_%28cropped_2%29.jpg"> paul ryan</div>
+		<div class="uk-width-1-5">Kansas Governor<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Sam_Brownback%2C_CPAC_2015_headshot.jpg/366px-Sam_Brownback%2C_CPAC_2015_headshot.jpg">Samuel headahh</div>
+		<div class="uk-width-1-5">Kansas Senator <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Pat_Roberts_official_Senate_photo.jpg/398px-Pat_Roberts_official_Senate_photo.jpg">PatRob</div>
 	</div>
-	I just want to say <em style="color: green; font-size: 2em;">greeting</em>
-	<em>Hello</em>, world!
-	<div class="uk-container">Trump</div>
-	<div class="uk-container">paulryan</div>
-	<div class="uk-container">else</div>
-
-	<script type="text/javascript">
-		if ("geolocation" in navigator) {
-			/* geolocation is available */
-			navigator.geolocation.getCurrentPosition(function(position) {
-				console.log(position.coords.latitude, position.coords.longitude);
-			});
-		}
-		else {
-			console.log("no geo");
-			/* geolocation IS NOT available */
-		}
-	</script>
-</body>
-</html>
+{% endblock %}
