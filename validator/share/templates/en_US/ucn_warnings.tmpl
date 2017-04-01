@@ -1,0 +1,93 @@
+<TMPL_IF NAME="W01">
+	Missing "charset" attribute for "<TMPL_VAR NAME="W01_ct" ESCAPE="HTML">" document.
+</TMPL_IF>
+<TMPL_IF NAME="W02">
+	No Character Encoding Found!
+</TMPL_IF>
+<TMPL_IF NAME="W03">
+	Character Encoding Override in effect!
+</TMPL_IF>
+<TMPL_IF NAME="W04">
+	No Character Encoding Found!
+	<TMPL_IF NAME="W04_override">
+	Using
+	<TMPL_ELSE>
+	Falling back to 
+	</TMPL_IF>
+	<TMPL_IF NAME="W04_charset"><TMPL_VAR NAME="W04_charset" ESCAPE="HTML"><TMPL_ELSE>UTF-8</TMPL_IF>.
+</TMPL_IF>
+<TMPL_IF NAME="W05">
+	DOCTYPE Override in effect!
+</TMPL_IF>
+<TMPL_IF NAME="W06">
+	Unable to Determine Parse Mode!
+</TMPL_IF>
+<TMPL_IF NAME="W07">
+	Contradictory Parse Modes Detected!
+</TMPL_IF>
+<TMPL_IF NAME="W08">
+	No Content-Type Found!
+</TMPL_IF>
+<TMPL_IF NAME="W09">
+	No DOCTYPE found! Attempting validation with <TMPL_VAR NAME="W09_dtd" ESCAPE="HTML">.
+</TMPL_IF>
+<TMPL_IF NAME="W09xml">
+	xmlNo DOCTYPE found! Checking XML syntax only.
+</TMPL_IF>
+<TMPL_IF NAME="W10">
+	Unknown Namespace Found
+</TMPL_IF>
+<TMPL_IF NAME="W11">
+	Namespace Found in non-XML Document
+</TMPL_IF>
+<TMPL_IF NAME="W12">
+	No Namespace Found
+</TMPL_IF>
+<TMPL_IF NAME="W13">
+	DOCTYPE Override in effect!
+</TMPL_IF>
+<TMPL_IF NAME="W14">
+	No DOCTYPE Found!
+</TMPL_IF>
+<TMPL_IF NAME="W15">
+	DOCTYPE Override in effect!
+</TMPL_IF>
+<TMPL_IF NAME="W16">
+	No DOCTYPE Found! Falling Back to
+	<TMPL_VAR NAME="W16_dtd" ESCAPE="HTML">.
+</TMPL_IF>
+<TMPL_IF NAME="W17">
+	No Character Encoding detected!
+</TMPL_IF>
+<TMPL_IF NAME="W18">
+	Character Encoding mismatch!
+</TMPL_IF>
+<TMPL_IF NAME="W19">
+	Character Encoding mismatch!
+</TMPL_IF>
+<TMPL_IF NAME="W20">
+	Character Encoding mismatch!
+</TMPL_IF>
+<TMPL_IF NAME="W21">
+	Byte-Order Mark found in UTF-8 File.
+</TMPL_IF>
+<TMPL_IF NAME="W22">
+	Character Encoding suggestion: use 
+	<TMPL_VAR NAME="W22_suggested" ESCAPE="HTML"> instead of <TMPL_VAR NAME="W22_declared" ESCAPE="HTML"></warning></message>
+</TMPL_IF>
+<TMPL_IF NAME="W23">
+	Conflict between Mime Type and Document Type
+</TMPL_IF>
+<TMPL_IF NAME="W24">
+	Rare or unregistered Character Encoding detected
+</TMPL_IF>
+<TMPL_IF NAME="W25">
+	<TMPL_VAR NAME="W25_dtd" ESCAPE="HTML"> document without DOCTYPE detected
+</TMPL_IF>
+<TMPL_IF NAME="W26">
+	Mismatch between Public and System identifiers in the DOCTYPE declaration
+</TMPL_IF>
+<TMPL_IF NAME="W@@">
+	W@@
+</TMPL_IF>
+

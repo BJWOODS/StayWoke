@@ -4,6 +4,7 @@
 	<!--<a href="#" class="uk-icon">
 		<i class="fa fa-bars" aria-hidden="true"></i>
 	</a>-->
+	yo
 	<div class="uk-grid uk-container">
 		<div class="uk-width-1-5"><!--{{apiKey}}--></div>
 		<div class="uk-width-1-5">celeb in chief<img id="Trump" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/384px-Donald_Trump_official_portrait.jpg"> Trump</div>
@@ -14,6 +15,7 @@
 	</div>
 	<script type="text/javascript">
 		$("#Trump").click(function(){
+			console.log("{{cidTrump}}")
 			$("#summary").text("{{cidTrump}}");
 			$("#summary").fadeIn();
 		});
