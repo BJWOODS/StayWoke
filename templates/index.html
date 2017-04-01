@@ -5,18 +5,32 @@
 		<i class="fa fa-bars" aria-hidden="true"></i>
 	</a>-->
 	<div class="uk-grid uk-container">
-		<div class="uk-width-1-5">{{apiKey}}</div>
-		<div class="uk-width-1-5">celeb in chief<img id="chump" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/384px-Donald_Trump_official_portrait.jpg"> Trump</div>
-		<div class="uk-width-1-5">speaker <img id="paul" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Speaker_Paul_Ryan_official_photo_%28cropped_2%29.jpg/408px-Speaker_Paul_Ryan_official_photo_%28cropped_2%29.jpg"> paul ryan</div>
-		<div class="uk-width-1-5">Kansas Governor<img id="brownback" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Sam_Brownback%2C_CPAC_2015_headshot.jpg/366px-Sam_Brownback%2C_CPAC_2015_headshot.jpg">Samuel headahh</div>
-		<div class="uk-width-1-5">Kansas Senator <img id="patrob" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Pat_Roberts_official_Senate_photo.jpg/398px-Pat_Roberts_official_Senate_photo.jpg">PatRob</div>
+		<div class="uk-width-1-5"><!--{{apiKey}}--></div>
+		<div class="uk-width-1-5">celeb in chief<img id="Trump" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/384px-Donald_Trump_official_portrait.jpg"> Trump</div>
+		<div class="uk-width-1-5">speaker <img id="Ryan" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Speaker_Paul_Ryan_official_photo_%28cropped_2%29.jpg/408px-Speaker_Paul_Ryan_official_photo_%28cropped_2%29.jpg"> paul ryan</div>
+		<div class="uk-width-1-5">Kansas Governor<img id="Sam" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Sam_Brownback%2C_CPAC_2015_headshot.jpg/366px-Sam_Brownback%2C_CPAC_2015_headshot.jpg">Sam brownback</div>
+		<div class="uk-width-1-5">Kansas Senator <img id="Rob" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Pat_Roberts_official_Senate_photo.jpg/398px-Pat_Roberts_official_Senate_photo.jpg">PatRob</div>
+		<div class="uk-width-1-1"><div id="summary uk-center">placeholder</div></div>
 	</div>
 	<script type="text/javascript">
-		if(jQuery('#chump').data('clicked')) {
-			$.post('/',
-			);
-		} else {
-		    //run function2
-		}
+		$("#Trump").click(function(){
+			$("#summary").text("{{cidTrump}}");
+			$("#summary").fadeIn();
+		});
+		
+		$("#Ryan").click(function(){
+			$("#summary").text("{{cidRyan}}");
+			$("#summary").fadeIn();
+		});
+		
+		$("#Sam").click(function(){
+			$("#summary").text("{{cidSam}}");
+			$("#summary").fadeIn();
+		});
+		
+		$("#Rob").click(function(){
+			$("#summary").text("{{cidRob}}");
+			$("#summary").fadeIn();
+		});
 	</script>
 {% endblock %}

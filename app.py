@@ -5,14 +5,19 @@ import requests
 
 app = flask.Flask(__name__)
 __apikey__ = 'ab2396d1a7eb19b3bf5452a560714f0d' 
-cid = 'N00000019'
+cidTrump = 'N00023864'
+cidRyan = 'N00004357'
+cidRob = 'N00005285'
+cidSam = 'N00005244'
+cid = ''
 @app.route('/')
 def hello():
     
-    apiKey = 'http://opensecrets.org/api/?method=candSummary&cid='+ cid + '&cycle=2012&apikey='+__apikey__
+    apiKey = 'http://opensecrets.org/api/?method=candSummary&cid='+ cidTrump + '&cycle=2016&apikey='+__apikey__
     r = requests.get(apiKey).content
-    
-    return flask.render_template("index.html",apiKey = r,cid = cid) #passing in apiKey string to be used by index
+    #passing in apiKey string to be used by index
+    return flask.render_template("index.html",apiKey = r,cidTrump = cidTrump,
+                                cidRyan = cidRyan, cidRob = cidRob, cidSam = cidSam) 
 
 @app.route('/dez')
 def dez():
